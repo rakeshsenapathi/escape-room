@@ -1,18 +1,25 @@
 import React, { useEffect } from 'react';
 import './WelcomePage.scss';
-// import RulesPage from '../RulesPage/RulesPage';
+import { useHistory } from "react-router-dom";
 
 function WelcomePage() {
+
+    const history = useHistory();
+
     const handleEventStart = (e) => {
-        if (e.keyCode === 32) {
+        if (e.keyCode === 32) { // value of space bar in keyboard
+            const path = 'rules';
+            history.push(path); // Routing to the path 'rules'
         }
     }
+
     useEffect(() => {
         document.addEventListener("keypress", handleEventStart, false);
         return () => {
             document.removeEventListener("keypress", handleEventStart, false);
         }
     }, []);
+
     return (
         <div className="welcome">
             <div className="welcome__text-box">
