@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import './WelcomePage.scss';
 import { useHistory } from "react-router-dom";
 
@@ -6,19 +6,19 @@ function WelcomePage() {
 
     const history = useHistory();
 
-    const handleEventStart = (e) => {
+    const handleEventStart = useCallback((e) => {
         if (e.keyCode === 32) { // value of space bar in keyboard
             const path = 'rules';
             history.push(path); // Routing to the path 'rules'
         }
-    }
+    }, []);
 
     useEffect(() => {
         document.addEventListener("keypress", handleEventStart, false);
         return () => {
             document.removeEventListener("keypress", handleEventStart, false);
         }
-    }, []);
+    }, [handleEventStart]);
 
     return (
         <div className="welcome">
