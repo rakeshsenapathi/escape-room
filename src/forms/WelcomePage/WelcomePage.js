@@ -11,7 +11,7 @@ function WelcomePage() {
             const path = 'rules';
             history.push(path); // Routing to the path 'rules'
         }
-    }, []);
+    }, [history]);
 
     useEffect(() => {
         document.addEventListener("keypress", handleEventStart, false);
