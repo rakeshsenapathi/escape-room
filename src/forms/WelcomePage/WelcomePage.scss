@@ -1,0 +1,24 @@
+@import "../../common-styles/main.scss";
+
+.welcome{
+    height: 100vh;
+    position: relative;
+    background-image: url(../../assets/images/welcome-bgimage.png);
+    background-size: cover;
+    background-position: center;
+
+    &__text-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__footer-text{
+        color: $color-white;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translate(-50%, -50%);
+    }
+}
