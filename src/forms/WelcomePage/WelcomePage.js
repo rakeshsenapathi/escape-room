@@ -24,12 +24,12 @@ function WelcomePage() {
         <div className="welcome">
             <div className="welcome__text-box">
                 <h1 className="heading-primary">
-                    <span className="heading-primary--sub">Welcome to the</span>
+                    <span className="heading-primary--sub ut-align-center">Welcome to the</span>
                     <span className="heading-primary--main">Escape Room</span>
                 </h1>
             </div>
             <div className="welcome__footer-text">
-                <h1 className="heading-primary--sub">
+                <h1 className="heading-primary--sub ut-align-center">
                     Tap <span className="heading-primary--highlight">"Space"</span> to enter the game
                 </h1>
             </div>

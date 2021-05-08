@@ -1,0 +1,26 @@
+@import "../../common-styles/main.scss";
+
+.introduction{
+    @include setCommonBgImageAndPosition;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__video{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        width: 40%;
+        height: 45%;
+        background-color: white;
+
+        &-text{
+            margin-top: 3rem;
+            margin-bottom: 0;
+        }
+    }
+
+}

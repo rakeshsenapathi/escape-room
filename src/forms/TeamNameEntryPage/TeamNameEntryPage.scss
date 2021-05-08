@@ -1,0 +1,45 @@
+@import "../../common-styles/main.scss";
+
+.teamName{
+    @include setCommonBgImageAndPosition;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__profileImage{
+        margin-top: 17rem;
+        margin-bottom: 4rem;
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input{
+        border-radius: 1rem;
+        font-family: inherit;
+        font-size: 32px;
+        border: 4px solid $color-white;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 16rem;
+        padding: 3rem 3.6rem; 
+        color: #262626;
+        outline: none;
+        width: 70rem;
+        height: 8rem;
+
+        &::-webkit-input-placeholder{
+            color: #262626;
+        }
+
+    }
+
+    &__btn{
+        width: 20rem;
+        height: 6rem;
+    }
+}
