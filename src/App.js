@@ -3,6 +3,18 @@ import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import RulesPage from "./forms/RulesPage/RulesPage";
 import TeamNameEntryPage from "./forms/TeamNameEntryPage/TeamNameEntryPage";
 import IntroductionPage from "./forms/IntroductionPage/IntroductionPage";
+import {
+  CoffeeShopBackStoryPage,
+  CoffeeShopBackStoryPage1,
+  CoffeeShopBackStoryPage2
+} from "./forms/CoffeeShopBackStoryPage";
+import {
+  CafePage,
+  CafePage1,
+  CafePage2,
+  CafePage3,
+  CafePage4
+} from "./forms/CafePage";
 function App() {
   return (
     <div>
@@ -16,6 +28,30 @@ function App() {
           </Route>
           <Route path='/introduction'>
             <IntroductionPage />
+          </Route>
+          <Route path='/coffeeShopStory'>
+            <CoffeeShopBackStoryPage />
+          </Route>
+          <Route path='/coffeeShopStory1'>
+            <CoffeeShopBackStoryPage1 />
+          </Route>
+          <Route path='/coffeeShopStory2'>
+            <CoffeeShopBackStoryPage2 />
+          </Route>
+          <Route path='/cafe'>
+            <CafePage />
+          </Route>
+          <Route path='/cafe1'>
+            <CafePage1 />
+          </Route>
+          <Route path='/cafe2'>
+            <CafePage2 />
+          </Route>
+          <Route path='/cafe3'>
+            <CafePage3 />
+          </Route>
+          <Route path='/cafe4'>
+            <CafePage4 />
           </Route>
           <Route path='/'>
             <WelcomePage />

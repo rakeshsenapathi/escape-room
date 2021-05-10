@@ -1,15 +1,15 @@
 import React from 'react';
 import './TeamNameEntryPage.scss';
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import profileImage from '../../assets/images/profile-image-1.png';
 
 function TeamNameEntryPage() {
 
-    // const history = useHistory();
+    const history = useHistory();
 
     const navigateToNext = () => {
-        // const path = "/introduction";
-        // history.push(path);
+        const path = "/coffeeShopStory";
+        history.push(path);
     }
 
     return (
