@@ -12,6 +12,7 @@ function Footer(props) {
         "padding": props.iconNext ? "1.4rem 1.6rem" : "1.4rem 1.8rem",
         "width": props.styleProps.width,
         "height": props.styleProps.height,
+        "fontWeight": "700",
         "fontSize": "2.6rem",
         "marginRight": "4rem",
         "textAlign": "center",

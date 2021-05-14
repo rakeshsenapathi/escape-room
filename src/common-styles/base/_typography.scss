@@ -1,16 +1,13 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+body{
+}
+
+.fw-600{
+  font-weight: 600;
+}
+
+.fw-300{
+  font-weight: 300;
+}
 
 .heading-primary{
   color: $color-white;
@@ -19,6 +16,7 @@ body {
   
   &--main{
     display: block;
+    font-weight: 800;
     text-align: center;
     color: $color-primary;
     font-size: 6.2rem;
@@ -27,6 +25,7 @@ body {
 
   &--sub{
     display: block;
+    font-weight: 300;
     font-size: 3.4rem;
   }
 
@@ -37,6 +36,10 @@ body {
 }
 
 .heading-secondary{
+  color: $color-white;
+  margin-bottom: 6rem;
+  font-size: 3.4rem;
+  font-weight: 600;
 }
 
 .heading-tertiary{

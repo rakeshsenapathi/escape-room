@@ -3,7 +3,7 @@ import "./CoffeeShopBackStoryPage.scss";
 import Footer from "../../components/footer/footer.js";
 
 function CoffeeShopBackStoryPage2() {
-    const content = "Our mission starts at café Nero, Are you ready?";
+    const content = "I am here to help you get your revenge by hacking into the company’s system and obtaining evidence to destroy Roxxon. I have done all my research and articulated a full proof plan, I just need you to carefully follow my instructions";
 
     const styleProps = {
         "width": "18.9rem",
@@ -12,10 +12,10 @@ function CoffeeShopBackStoryPage2() {
 
     return (
         <div className="coffeeShopStory">
-            <Footer textBtn="I'm ready"
-                iconNext={false}
+            <Footer textBtn="Next"
+                iconNext={true}
                 content={content}
-                path="/cafe" styleProps={styleProps}
+                path="/coffeeShopStory3" styleProps={styleProps}
             />
         </div>
     );

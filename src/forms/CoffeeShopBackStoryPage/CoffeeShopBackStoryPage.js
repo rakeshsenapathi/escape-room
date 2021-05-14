@@ -4,7 +4,7 @@ import Footer from "../../components/footer/footer.js";
 
 function CoffeeShopBackStoryPage() {
 
-    const content = "Hello, I am Morpheus. Thank you for hiring me to help you with your mission to destroy company Roxxon. From your previous email I understand that company Roxxon has caused major damages to your community with their toxic waste and illegal accumulation of properties.";
+    const content = "Hello, I am Morpheus. Thank you for hiring me to help you with your mission to destroy company Roxxon.";
 
     const styleProps = {
         "width": "18.9rem",

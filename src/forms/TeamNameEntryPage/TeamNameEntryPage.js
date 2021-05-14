@@ -23,7 +23,7 @@ function TeamNameEntryPage() {
                     className="form__input"
                 />
                 <button
-                    class="form__btn btn btn--default"
+                    className="form__btn btn btn--default"
                     onClick={navigateToNext}>Let's go</button>
             </form>
         </div>

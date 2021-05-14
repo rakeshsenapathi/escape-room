@@ -6,7 +6,8 @@ import IntroductionPage from "./forms/IntroductionPage/IntroductionPage";
 import {
   CoffeeShopBackStoryPage,
   CoffeeShopBackStoryPage1,
-  CoffeeShopBackStoryPage2
+  CoffeeShopBackStoryPage2,
+  CoffeeShopBackStoryPage3
 } from "./forms/CoffeeShopBackStoryPage";
 import {
   CafePage,
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path='/coffeeShopStory2'>
             <CoffeeShopBackStoryPage2 />
+          </Route>
+          <Route path='/coffeeShopStory3'>
+            <CoffeeShopBackStoryPage3 />
           </Route>
           <Route path='/cafe'>
             <CafePage />

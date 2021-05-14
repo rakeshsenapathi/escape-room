@@ -4,7 +4,7 @@ import Footer from "../../components/footer/footer.js";
 
 function CoffeeShopBackStoryPage1() {
 
-    const content = "I am here to help you get your revenge by hacking into the company’s system and obtaining evidence to destroy Roxxon. I have done all my research and articulated a full proof plan, I just need you to carefully follow my instructions";
+    const content = "From your previous email I understand that company Roxxon has caused major damages to your community with their toxic waste and illegal accumulation of properties.";
 
     const styleProps = {
         "width": "18.9rem",
