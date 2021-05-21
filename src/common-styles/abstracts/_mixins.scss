@@ -24,3 +24,10 @@
     height: $height;
     visibility: $visibility;
 }
+
+@mixin alignAsSingleRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

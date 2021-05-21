@@ -14,7 +14,8 @@ import {
   CafePage1,
   CafePage2,
   CafePage3,
-  CafePage4
+  CafePage4,
+  CafePageWifi
 } from "./forms/CafePage";
 function App() {
   return (
@@ -56,6 +57,9 @@ function App() {
           </Route>
           <Route path='/cafe4'>
             <CafePage4 />
+          </Route>
+          <Route path='/cafeWifi'>
+            <CafePageWifi />
           </Route>
           <Route path='/'>
             <WelcomePage />

@@ -2,4 +2,62 @@
 
 .cafePage{
     @include setCommonBgImageAndPosition;
+
+    &__image{
+        height: 60%;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        &--formatted{
+            top: 35%;
+        }
+    }
+
+    &__highlight-shape{
+        position: absolute;
+        border-radius: 50%;
+        background-color: #F8F0F0;
+        opacity: .4;
+        z-index: 222;
+        transform: translate(-50%,-50%);
+        &--1{
+            width: 9rem;
+            height: 9rem;
+            left: 30%;
+            top: 42%;
+            &:hover{
+                
+            }
+        }
+        &--2{
+            width: 6rem;
+            height: 6rem;
+            left: 49%;
+            top: 35%;
+        }
+    }
+}
+
+.cafePage-wifi{
+    @include setCommonBgImageAndPosition;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form{
+        &-input{
+            margin-right: 2rem;
+        }
+    }
+
+    &__image{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
 }

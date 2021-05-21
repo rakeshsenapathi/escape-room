@@ -1,6 +1,7 @@
 import React from 'react';
 import "./CoffeeShopBackStoryPage.scss";
 import Footer from "../../components/footer/footer.js";
+import image from "../../assets/images/coffee-shop-outdoor-1.png";
 
 function CoffeeShopBackStoryPage() {
 
@@ -13,6 +14,7 @@ function CoffeeShopBackStoryPage() {
 
     return (
         <div className="coffeeShopStory">
+            <img className="coffeeShopStory__image" src={image} alt="coffeshop" />
             <Footer textBtn="Next"
                 iconNext={true}
                 content={content}
