@@ -16,7 +16,8 @@ function CafePage4() {
     }
 
     const handleClickOption1 = (event) => {
-
+        const path = "/cafeMenu";
+        history.push(path);
     }
 
     const handleClickOption2 = (event) => {
@@ -36,7 +37,6 @@ function CafePage4() {
             <Footer textBtn="Hint"
                 iconNext={false}
                 content={content}
-                path="/cafe5"
                 styleProps={styleProps}
             />
         </div>

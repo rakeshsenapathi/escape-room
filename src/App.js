@@ -15,7 +15,9 @@ import {
   CafePage2,
   CafePage3,
   CafePage4,
-  CafePageWifi
+  CafePageMenu,
+  CafePageWifi,
+  CafePagePostCoffee
 } from "./forms/CafePage";
 function App() {
   return (
@@ -60,6 +62,12 @@ function App() {
           </Route>
           <Route path='/cafeWifi'>
             <CafePageWifi />
+          </Route>
+          <Route path='/cafeMenu'>
+            <CafePageMenu />
+          </Route>
+          <Route path='/cafePostCoffee'>
+            <CafePagePostCoffee />
           </Route>
           <Route path='/'>
             <WelcomePage />

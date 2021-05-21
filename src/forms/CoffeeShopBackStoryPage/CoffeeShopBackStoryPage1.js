@@ -2,6 +2,7 @@ import React from 'react';
 import "./CoffeeShopBackStoryPage.scss";
 import Footer from "../../components/footer/footer.js";
 import image from "../../assets/images/coffee-shop-outdoor-1.png";
+import { useHistory } from 'react-router';
 
 function CoffeeShopBackStoryPage1() {
 
@@ -12,13 +13,20 @@ function CoffeeShopBackStoryPage1() {
         "height": "6.2rem"
     }
 
+    const history = useHistory();
+
+    const handleNext = () => {
+        const path = "/coffeeShopStory2";
+        history.push(path);
+    };
+
     return (
         <div className="coffeeShopStory">
             <img className="coffeeShopStory__image" src={image} alt="coffeshop" />
             <Footer textBtn="Next"
                 iconNext={true}
+                handleNext={handleNext}
                 content={content}
-                path="/coffeeShopStory2"
                 styleProps={styleProps} />
         </div>
     );

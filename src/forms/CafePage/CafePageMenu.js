@@ -6,9 +6,9 @@ import "../../common-styles/main.scss";
 import CONSTANTS from "../../assets/constants/Constants";
 import { useHistory } from 'react-router';
 
-function CafePageWifi() {
+function CafePageMenu() {
 
-    const [content, setContent] = useState("Wifi Screen");
+    const [content, setContent] = useState("Read between the lines");
     const [hintClickCount, setHintClickCount] = useState(0);
     const history = useHistory();
     const [failCount, setFailCount] = useState(0);
@@ -27,10 +27,13 @@ function CafePageWifi() {
     const generateHintContent = (count) => {
         switch (count) {
             case 1:
-                setContent("Check the text in router for hints");
+                setContent("Hint 1) Some of the letters look different");
+                break;
+            case 2:
+                setContent("Hint 2) I think you have to rearrange the letters to form a word");
                 break;
             case CONSTANTS.MAX_FAIL_LIMIT:
-                setContent("The password is ransomeware");
+                setContent("Hint 3) Alright, I figured it out, the word is 'Ransomeware'");
                 break;
             default:
                 setContent("The password is ransomeware");
@@ -82,4 +85,4 @@ function CafePageWifi() {
     );
 };
 
-export default CafePageWifi;
+export default CafePageMenu;

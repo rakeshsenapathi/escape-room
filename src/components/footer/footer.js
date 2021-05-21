@@ -26,10 +26,10 @@ function Footer(props) {
 
     const history = useHistory();
 
-    const handleNext = () => {
-        const path = props.path;
-        history.push(path);
-    };
+    // const handleNext = () => {
+    //     const path = props.path;
+    //     history.push(path);
+    // };
 
     return (
         <footer className="footer-generic">
@@ -38,7 +38,7 @@ function Footer(props) {
                 <h1 className="footer-generic__profile-text">{props.content}</h1>
             </div>
             <div style={btnStyles}
-                onClick={handleNext}>
+                onClick={props.handleNext}>
                 {props.textBtn}
                 <img src={nextIcon} alt="Next" style={nextIconStyles} />
             </div>

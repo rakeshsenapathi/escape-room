@@ -4,6 +4,8 @@ import CafePage2 from './CafePage2';
 import CafePage3 from './CafePage3';
 import CafePage4 from './CafePage4';
 import CafePageWifi from './CafePageWifi';
+import CafePageMenu from './CafePageMenu';
+import CafePagePostCoffee from './CafePagePostCoffee';
 
 export {
     CafePage,
@@ -11,5 +13,7 @@ export {
     CafePage2,
     CafePage3,
     CafePage4,
-    CafePageWifi
+    CafePageWifi,
+    CafePageMenu,
+    CafePagePostCoffee
 }
