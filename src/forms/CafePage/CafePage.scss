@@ -26,9 +26,6 @@
             height: 9rem;
             left: 30%;
             top: 42%;
-            &:hover{
-                
-            }
         }
         &--2{
             width: 6rem;
@@ -60,4 +57,56 @@
         margin-bottom: 2rem;
     }
 
+}
+
+.cafePagePostCoffee{
+    @include setCommonBgImageAndPosition;
+
+    &__conversation{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+    }
+}
+
+.conversation-text{
+    &--1{
+        position: absolute;
+        top: 12.2%;
+        left: 47%;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    &--2{
+        text-align: justify;
+        position: absolute;
+        top: 37%;
+        transform: translate(-50%, -50%);
+        left: 46%;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        color: $color-white;
+        font-weight: 500;
+    }
+    &--3{
+        text-align: justify;
+        position: absolute;
+        top: 61%;
+        transform: translate(-50%, -50%);
+        left: 46%;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: $color-white;
+        font-weight: 500;
+    }
+}
+
+.conversation-btn{
+    position: absolute;
+    top: 85%;
+    width: 15rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
