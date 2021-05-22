@@ -1,9 +1,15 @@
 import React from 'react';
 import "./CafePage.scss";
 import image from "../../assets/images/conversation-1.png";
+import { useHistory } from 'react-router';
 
 function CafePagePostCoffee() {
     const playerName = "Rakesh"; //Mocking name, take it from context-api next
+    const history = useHistory();
+    const handleNext = () => {
+        const path = "/office-outside";
+        history.push(path);
+    };
     return (
         <div className="cafePagePostCoffee">
             <div className="cafePagePostCoffee__conversation">
@@ -34,7 +40,8 @@ function CafePagePostCoffee() {
                     system. Next task, go to<br />
                     company Sigma’s office. <br />
                 </p>
-                <button className="conversation-btn btn btn--default">Next</button>
+                <button className="conversation-btn conversation-btn--default"
+                    onClick={handleNext}>Next</button>
             </div>
         </div>
     );

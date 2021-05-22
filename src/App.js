@@ -19,6 +19,21 @@ import {
   CafePageWifi,
   CafePagePostCoffee
 } from "./forms/CafePage";
+import {
+  OfficeInsidePage,
+  OfficeInsidePage1,
+  OfficeInsidePage2,
+  OfficeInsidePage3,
+  OfficePage,
+  OfficePage1,
+  OfficePage2,
+  OfficePage3,
+  OfficesLocation,
+  OfficesLocation1,
+  OfficesLocation2,
+  OfficesLocation3,
+  OfficesLocation4
+} from "./forms/OfficePage";
 function App() {
   return (
     <div>
@@ -68,6 +83,45 @@ function App() {
           </Route>
           <Route path='/cafePostCoffee'>
             <CafePagePostCoffee />
+          </Route>
+          <Route path="/office-outside">
+            <OfficePage />
+          </Route>
+          <Route path="/office-outside-1">
+            <OfficePage1 />
+          </Route>
+          <Route path="/office-outside-2">
+            <OfficePage2 />
+          </Route>
+          <Route path="/office-outside-3">
+            <OfficePage3 />
+          </Route>
+          <Route path="/office-inside">
+            <OfficeInsidePage />
+          </Route>
+          <Route path="/office-inside-1">
+            <OfficeInsidePage1 />
+          </Route>
+          <Route path="/office-inside-2">
+            <OfficeInsidePage2 />
+          </Route>
+          <Route path="/office-inside-3">
+            <OfficeInsidePage3 />
+          </Route>
+          <Route path="/office-location">
+            <OfficesLocation />
+          </Route>
+          <Route path="/office-location-1">
+            <OfficesLocation1 />
+          </Route>
+          <Route path="/office-location-2">
+            <OfficesLocation2 />
+          </Route>
+          <Route path="/office-location-3">
+            <OfficesLocation3 />
+          </Route>
+          <Route path="/office-location-4">
+            <OfficesLocation4 />
           </Route>
           <Route path='/'>
             <WelcomePage />

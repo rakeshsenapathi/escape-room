@@ -1,8 +1,8 @@
 import React from 'react';
 import profileImage from '../../assets/images/profile-image-2.png';
+import playerProfileImage from '../../assets/images/profile-image-1.png';
 import nextIcon from '../../assets/images/nextIcon.png';
 import './footer.scss';
-import { useHistory } from 'react-router';
 
 function Footer(props) {
 
@@ -24,17 +24,12 @@ function Footer(props) {
         "display": !props.iconNext ? "none" : "inline-block"
     }
 
-    const history = useHistory();
-
-    // const handleNext = () => {
-    //     const path = props.path;
-    //     history.push(path);
-    // };
+    const image = props.hasOwnProperty('isPlayerNarrative') && props.isPlayerNarrative ? playerProfileImage : profileImage;
 
     return (
         <footer className="footer-generic">
             <div className="footer-generic__box">
-                <img className="footer-generic__profile-image" src={profileImage} alt="footer" />
+                <img className="footer-generic__profile-image" src={image} alt="footer" />
                 <h1 className="footer-generic__profile-text">{props.content}</h1>
             </div>
             <div style={btnStyles}

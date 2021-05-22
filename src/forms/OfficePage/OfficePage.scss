@@ -1,0 +1,51 @@
+@import "../../common-styles/main.scss";
+
+.office-outside{
+
+    @include setCommonBgImageAndPosition;
+
+    &__image{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        height: 70%;
+        background-size: cover;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.server-room{
+
+    @include setCommonBgImageAndPosition;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__image{
+        margin: 2rem 0rem;
+        height: 65%;
+        width: 60%;
+    }
+
+}
+
+.form{
+    &__btn{
+        margin-left: 2rem;
+    }
+} 
+
+.offices-location{
+    @include setCommonBgImageAndPosition;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__image{
+        margin-top: 3rem;
+        height: 70%;
+    }
+}

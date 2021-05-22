@@ -61,20 +61,20 @@
 
 .cafePagePostCoffee{
     @include setCommonBgImageAndPosition;
+    padding: 5rem;
 
     &__conversation{
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5rem;
     }
 }
 
 .conversation-text{
     &--1{
         position: absolute;
-        top: 12.2%;
+        top: 6.2%;
         left: 47%;
         font-size: 1.6rem;
         font-weight: 500;
@@ -82,7 +82,7 @@
     &--2{
         text-align: justify;
         position: absolute;
-        top: 37%;
+        top: 36%;
         transform: translate(-50%, -50%);
         left: 46%;
         font-size: 1.2rem;
@@ -93,7 +93,7 @@
     &--3{
         text-align: justify;
         position: absolute;
-        top: 61%;
+        top: 63%;
         transform: translate(-50%, -50%);
         left: 46%;
         font-size: 1.4rem;
@@ -104,9 +104,31 @@
 }
 
 .conversation-btn{
-    position: absolute;
-    top: 85%;
-    width: 15rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &,
+    &:link,
+    &:visited{
+        position: absolute;
+        top: 85%;
+        width: 15rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        padding: 1.4rem 3.4rem;
+        border-radius: 1rem;
+        transition: all .2s;
+        font-size: 2.8rem;
+
+        // Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    &--default{
+        background-color: $color-primary-light;
+        color: $color-black;
+        font-weight: 600;
+
+        &::after{
+            background-color: $color-primary-light;
+        }
+    }
 }
