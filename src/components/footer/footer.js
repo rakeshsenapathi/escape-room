@@ -6,7 +6,7 @@ import './footer.scss';
 
 function Footer(props) {
 
-    const btnStyles = {
+    const showBtnStyle = {
         "borderRadius": "1rem",
         "display": "block",
         "padding": props.iconNext ? "1.4rem 1.6rem" : "1.4rem 1.8rem",
@@ -18,6 +18,12 @@ function Footer(props) {
         "textAlign": "center",
         "backgroundColor": "#FFB169"
     }
+
+    const hideBtnStyle = {
+        "visibility": "hidden"
+    }
+
+    const btnStyles = props.hasOwnProperty('btnHide') && props.btnHide ? hideBtnStyle : showBtnStyle;
 
     const nextIconStyles = {
         "marginLeft": "1rem",

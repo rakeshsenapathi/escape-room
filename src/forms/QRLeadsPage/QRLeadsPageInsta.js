@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import "./QRLeadsPage.scss";
 import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
-import image from '../../assets/images/server-room-2.png';
+import image from '../../assets/images/qrcode.png';
 import CONSTANTS from '../../assets/constants/Constants';
 
-function OfficeInsidePage3() {
+function QRLeadsPageInsta() {
 
-    const content_text = "Some of these dates look innacurate. Maybe those wrong dates can help us find the password.";
+    const content_text = "See if you can find any information from the images in this instagram profile. We can use the information to find a way to get access to the company.";
 
-    const hint1 = "Hint 1) Check if everything is factually correct";
-    const hint2 = "Hint 2) It seems like the last digits are the clue";
-    const hint3 = "Hint 3) Hero I go giving you the answer again! I think the answer is 8502";
+    const hint1 = "Hint 1) Maybe you should look up close.";
+    const hint2 = "Hint 2) See if you could find a hidden e-mail.";
+    const hint3 = "Hint 3) Uhhh... do I need to do everything myself? There you go -  sarahsmith@roxxon.com";
 
     const [passwordVal, setPasswordVal] = useState("");
     const [content, setContent] = useState(content_text);
@@ -52,7 +53,7 @@ function OfficeInsidePage3() {
             setFailCount(failCount + 1);
         }
         else {
-            const path = "/office-location";
+            const path = "/phishing-email";
             history.push(path);
         }
     }
@@ -64,22 +65,29 @@ function OfficeInsidePage3() {
 
 
     return (
-        <div className="server-room">
-            <img src={image}
-                alt="Outside office"
-                className="server-room__image" />
-            <div className="server-room__form alignAsSingleRow form-single">
-                <input
-                    type="password"
-                    onChange={handleInput}
-                    value={passwordVal}
-                    required
-                    placeholder="Enter the password"
-                    className="server-room__form-input form-single__input"
-                />
-                <button
-                    className="form__btn btn btn--default"
-                    onClick={handleSubmit}>Done</button>
+        <div className="qrcode">
+            <div className="qrcode__container">
+                <div className="qrcode__container-scan">
+                    <img src={image}
+                        alt="Outside office"
+                        className="qrcode__image" />
+                    <p className="qrcode__scan-text">
+                        Scan QR code using your QR Scanner
+                        to open the Instagram profile.</p>
+                </div>
+                <div className="qrcode__form alignAsSingleRow form-single">
+                    <input
+                        type="password"
+                        onChange={handleInput}
+                        value={passwordVal}
+                        required
+                        placeholder="Enter the Email ID here"
+                        className="qrcode__form-input form-single__input"
+                    />
+                    <button
+                        className="form__btn btn btn--default"
+                        onClick={handleSubmit}>Done</button>
+                </div>
             </div>
             <Footer textBtn="Hint"
                 iconNext={false}
@@ -92,4 +100,4 @@ function OfficeInsidePage3() {
     );
 };
 
-export default OfficeInsidePage3;
+export default QRLeadsPageInsta;

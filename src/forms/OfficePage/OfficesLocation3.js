@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
-import image from '../../assets/images/offices-location.png';
+import image from '../../assets/images/offices-location-1.png';
 
 function OfficesLocation3() {
 

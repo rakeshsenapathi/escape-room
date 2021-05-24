@@ -1,11 +1,11 @@
 import React from 'react';
 import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
-import image from '../../assets/images/offices-location.png';
+import image from '../../assets/images/offices-location-1.png';
 
 function OfficesLocation4() {
 
-    const content = "Found it. It is in Roxxon’s Manchester branch.";
+    const content = "Now all I need you to do is sit back and help me find information online about the Manchester office before you actually go in. The Roxxon office in Manchester will have high level security so we need to be one step ahead. We need to find a secure way for you to get in.";
 
     const styleProps = {
         "width": "18.9rem",
@@ -15,7 +15,7 @@ function OfficesLocation4() {
     const history = useHistory();
 
     const handleNext = () => {
-        const path = "/office-location-4";
+        const path = "/qrleads";
         history.push(path);
     };
 

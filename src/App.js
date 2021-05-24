@@ -34,6 +34,13 @@ import {
   OfficesLocation3,
   OfficesLocation4
 } from "./forms/OfficePage";
+import {
+  QRLeadsPage, QRLeadsPage1, QRLeadsPageInsta
+} from "./forms/QRLeadsPage";
+import {
+  PhishingEmailCompose,
+  PhishingEmailPage
+} from "./forms/PhishingEmailPage";
 function App() {
   return (
     <div>
@@ -122,6 +129,21 @@ function App() {
           </Route>
           <Route path="/office-location-4">
             <OfficesLocation4 />
+          </Route>
+          <Route path="/qrleads">
+            <QRLeadsPage />
+          </Route>
+          <Route path="/qrleads-1">
+            <QRLeadsPage1 />
+          </Route>
+          <Route path="/qrleads-insta">
+            <QRLeadsPageInsta />
+          </Route>
+          <Route path="/phishing-email">
+            <PhishingEmailPage />
+          </Route>
+          <Route path="/phishing-email-compose">
+            <PhishingEmailCompose />
           </Route>
           <Route path='/'>
             <WelcomePage />

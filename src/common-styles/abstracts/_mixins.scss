@@ -31,3 +31,14 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin giveUnderline($margin-top) {
+    &:after{
+        content: '';
+        display: block;
+        height: 1.5px;
+        width: 100%;
+        margin-top: $margin-top;
+        background-color: #00BCD4;
+    }
+}

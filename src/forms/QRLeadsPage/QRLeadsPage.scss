@@ -1,0 +1,97 @@
+@import "../../common-styles/main.scss";
+
+.qrleads{
+    @include setCommonBgImageAndPosition;
+
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image{
+        margin-top: 5rem;
+        margin-left: 5rem;
+        width: 70%;
+        &--1{
+            margin-top: 2rem;
+            width: 60%;
+        }
+    }
+
+    &__search-event-area{
+        position: absolute;
+        width: 4%;
+        height: 9%;
+        transform: translate(-50%, -50%);
+        top: 66%;
+        left: 70%;
+        z-index: 222;
+        background-color: transparent;
+        &:hover{
+            cursor:pointer
+        }
+    }
+
+    &__click-event-area{
+        position: absolute;
+        width: 34%;
+        height: 26%;
+        transform: translate(-50%, -50%);
+        top: 43%;
+        left: 46%;
+        z-index: 222;
+        background-color: transparent;
+        &:hover{
+            cursor:pointer
+        }
+    }
+}
+
+.qrcode{
+
+    @include setCommonBgImageAndPosition;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__container-scan{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        margin-bottom: 2rem;
+    }
+
+    &__scan-text{
+        margin-left: 2rem;
+        font-weight: 700;
+        font-size: 4rem;
+        color: $color-white;
+    }
+
+    &__form{
+        &-input{
+            margin-right: 2rem;
+        }
+    }
+
+    &__image{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.form{
+    &__btn{
+        margin-left: 2rem;
+    }
+} 

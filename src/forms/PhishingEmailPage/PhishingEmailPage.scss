@@ -1,0 +1,82 @@
+@import "../../common-styles/main.scss";
+
+.phishing-email{
+    @include setCommonBgImageAndPosition;
+    padding: 5rem;
+
+    &__conversation{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.phishing-composemail{
+    @include setCommonBgImageAndPosition;
+    &__conversation{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.conversation-text{
+    &--1{
+        position: absolute;
+        top: 8.2%;
+        left: 46%;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    &--2{
+        text-align: justify;
+        position: absolute;
+        top: 33%;
+        transform: translate(-50%, -50%);
+        left: 45.5%;
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: 500;
+    }
+    &--3{
+        text-align: justify;
+        position: absolute;
+        top: 59%;
+        transform: translate(-50%, -50%);
+        left: 46%;
+        font-size: 1.4rem;  
+        color: $color-white;
+        font-weight: 500;
+    }
+}
+
+.conversation-btn{
+    &,
+    &:link,
+    &:visited{
+        position: absolute;
+        top: 85%;
+        width: 15rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        padding: 1.4rem 3.4rem;
+        border-radius: 1rem;
+        transition: all .2s;
+        font-size: 2.8rem;
+
+        // Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    &--default{
+        background-color: $color-primary-light;
+        color: $color-black;
+        font-weight: 600;
+
+        &::after{
+            background-color: $color-primary-light;
+        }
+    }
+}
