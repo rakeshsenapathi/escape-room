@@ -21,6 +21,17 @@
     }
 }
 
+.invitation{
+    @include setCommonBgImageAndPosition;
+    &__img-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+    }
+}
+
 .conversation-text{
     &--1{
         position: absolute;

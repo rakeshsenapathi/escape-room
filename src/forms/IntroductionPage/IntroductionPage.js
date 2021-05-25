@@ -14,12 +14,19 @@ function IntroductionPage() {
 
     return (
         <div className="introduction">
-            <div className="introduction__video bg-video">
-                <video className="bg-video__content">
-                    <source src="" type="video/mp4" />
-                    <source src="" type="video/webm" />
-                    <source />
-                </video>
+            <div className="introduction__video">
+                <iframe
+                    className="introduction__iframe"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/6xfpTCT4Ygw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer;
+                    autoplay; clipboard-write;
+                    encrypted-media; gyroscope;
+                    picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <h1 className="heading-primary heading-primary--sub introduction__video-text">Click "Play" to watch the video</h1>
             <footer className="footer">

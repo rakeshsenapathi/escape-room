@@ -39,8 +39,14 @@ import {
 } from "./forms/QRLeadsPage";
 import {
   PhishingEmailCompose,
-  PhishingEmailPage
+  PhishingEmailPage,
+  PhishingEmailInvitation,
+  PhishingEmailInvitation1,
+  PhishingEmailInvitation2
 } from "./forms/PhishingEmailPage";
+import {
+  FakeInvitation, FakeInvitation1, FakeInvitationRiddlePuzzle, FakeInvitationSafe, FakeInvitationSafe1, FakeInvitationSafe2
+} from "./forms/FakeInvitationPage";
 function App() {
   return (
     <div>
@@ -144,6 +150,33 @@ function App() {
           </Route>
           <Route path="/phishing-email-compose">
             <PhishingEmailCompose />
+          </Route>
+          <Route path="/phishing-email-invitation">
+            <PhishingEmailInvitation />
+          </Route>
+          <Route path="/phishing-email-invitation-1">
+            <PhishingEmailInvitation1 />
+          </Route>
+          <Route path="/phishing-email-invitation-2">
+            <PhishingEmailInvitation2 />
+          </Route>
+          <Route path="/fake-invitation">
+            <FakeInvitation />
+          </Route>
+          <Route path="/fake-invitation-1">
+            <FakeInvitation1 />
+          </Route>
+          <Route path="/fake-invitation-safe">
+            <FakeInvitationSafe />
+          </Route>
+          <Route path="/fake-invitation-safe-1">
+            <FakeInvitationSafe1 />
+          </Route>
+          <Route path="/riddle-puzzle">
+            <FakeInvitationRiddlePuzzle />
+          </Route>
+          <Route path="/fake-invitation-bossroom">
+            <FakeInvitationSafe2 />
           </Route>
           <Route path='/'>
             <WelcomePage />

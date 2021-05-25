@@ -34,6 +34,8 @@ function PhishingEmailCompose() {
 
     const handleSend = (response) => {
         validateCombination(response);
+        const path = "/phishing-email-invitation";
+        history.push(path);
     }
 
     return (

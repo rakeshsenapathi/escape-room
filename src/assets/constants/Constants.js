@@ -1,5 +1,5 @@
 const CONSTANTS = {
-    "WIFI_PASSWORD": "ransomeware",
+    "WIFI_PASSWORD": "ransomware",
     "MAX_FAIL_LIMIT": 3,
     "REFRESH_TIME": 3000,
     "SERVER_ROOM_PASSWORD": "8502",
@@ -14,7 +14,8 @@ const CONSTANTS = {
         "We regret to inform you that your account has been restricted and you must re- enter your login details in order to be able to ensure the security of your account.Click the link below to proceed.\nhttps://roxxon.com/my-account/change-password\nKind Regards,\nClaire Murray\nSecurity Department Help Desk - Roxxon"],
     "MAIL_ACCOUNT_SOLUTION": "security@roxxon.safe.com",
     "MAIL_SUBJECT_SOLUTION": "Subject2",
-    "MAIL_BODY_SOLUTION": 4
+    "MAIL_BODY_SOLUTION": 4,
+    "RIDDLE_ANSWER": "40"
 }
 
 export default CONSTANTS;

@@ -71,10 +71,10 @@
     }
 }
 
-.conversation-text{
+.cafe__conversation-text{
     &--1{
         position: absolute;
-        top: 6.2%;
+        top: 7.2%;
         left: 47%;
         font-size: 1.6rem;
         font-weight: 500;
@@ -86,7 +86,6 @@
         transform: translate(-50%, -50%);
         left: 46%;
         font-size: 1.2rem;
-        line-height: 1.2;
         color: $color-white;
         font-weight: 500;
     }
@@ -95,9 +94,8 @@
         position: absolute;
         top: 63%;
         transform: translate(-50%, -50%);
-        left: 46%;
-        font-size: 1.4rem;
-        line-height: 1.2;
+        left: 45%;
+        font-size: 1.2rem;
         color: $color-white;
         font-weight: 500;
     }

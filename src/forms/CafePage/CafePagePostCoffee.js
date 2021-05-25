@@ -1,6 +1,6 @@
 import React from 'react';
 import "./CafePage.scss";
-import image from "../../assets/images/conversation-1.png";
+import image from "../../assets/images/conversation-2.png";
 import { useHistory } from 'react-router';
 
 function CafePagePostCoffee() {
@@ -16,12 +16,12 @@ function CafePagePostCoffee() {
                 <img className="cafePagePostCoffee__image"
                     alt="Coversation" src={image}
                 />
-                <p className="conversation-text conversation-text--1">
+                <p className="cafe__conversation-text cafe__conversation-text--1">
                     {playerName}: <br />
                     Here is the password<br />
                     for the wifi router
                 </p>
-                <p className="conversation-text conversation-text--2">
+                <p className="cafe__conversation-text cafe__conversation-text--2">
                     Hacker: Ah good job! See how easy <br />
                     that was. I have now hacked <br />
                     into Tom’s company’s laptop <br />
@@ -33,7 +33,7 @@ function CafePagePostCoffee() {
                     him into giving us <br />
                     company credentials. <br />
                 </p>
-                <p className="conversation-text conversation-text--3">
+                <p className="cafe__conversation-text cafe__conversation-text--3">
                     Task 1 complete, we now have <br />
                     company Sigma’s employee <br />
                     details to go into their <br />

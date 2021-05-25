@@ -30,16 +30,6 @@ function RulesPage() {
                         </ul>
                     </div>
                 </div>
-                {/* <div className="rules__leaderboard">
-                    <h1 className="heading-primary heading-primary--sub ut-margin-bottom-medium">Leaderboard</h1>
-                    <ul className="rules__leaderboard-list">
-                        <li className="rules__leaderboard-item">Jack Doe</li>
-                        <li className="rules__leaderboard-item">Sam Doe</li>
-                        <li className="rules__leaderboard-item">Amy Doe</li>
-                        <li className="rules__leaderboard-item">Jane Doe</li>
-                        <li className="rules__leaderboard-item">Phil Doe</li>
-                    </ul>
-                </div> */}
             </div>
             <div
                 className="rules__agree-btn btn btn--default"
