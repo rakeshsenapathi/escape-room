@@ -1,0 +1,28 @@
+@import "../../common-styles/main.scss" ;
+
+.fire-alarm{
+
+    @include setCommonBgImageAndPosition;
+
+    &__container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &--max{
+            position: absolute;
+            height: 82%;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__image{
+        width: 60rem;
+        height: 50rem;
+        &--1{
+            height: 100%;
+        }
+    }
+}

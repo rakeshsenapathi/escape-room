@@ -19,6 +19,17 @@
         display: flex;
         width: fit-content;
         align-items: center;
+        &--textOnly{
+            margin: 4rem;
+            display: flex;
+            width: fit-content;
+            align-items: center;
+        }
+    }
+
+    &__text-container{
+        display: flex;
+        align-content: flex-start;
     }
 
     &__profile-text{
@@ -26,12 +37,29 @@
         font-size: 2.2rem;
         text-align: left;
         font-weight: 700;
+        &--1{
+            display: flex;
+            min-width: 16rem;
+            color: $color-white;
+            font-size: 2.2rem;
+            text-align: left;
+            font-weight: 700;
+        }
+        &--2{
+            color: $color-white;
+            font-size: 2.2rem;
+            text-align: left;
+            font-weight: 700;
+        }
     }
 
     &__profile-image{
         margin-right: 2.4rem;
         height: 9rem;
         width: 9rem;
+        &--1{
+            margin-right: 2.4rem;
+        }
     }
 
     &__btn{
@@ -46,4 +74,10 @@
         background-color: $color-primary-light;
     }
 
+}
+
+.color-highlight{
+    color: #FFB800;
+    font-size: 2.2rem;
+    font-weight: 700;
 }

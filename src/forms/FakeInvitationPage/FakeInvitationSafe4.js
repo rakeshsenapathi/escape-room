@@ -1,12 +1,13 @@
 import React from 'react';
 import "./FakeInvitationPage.scss";
-import Footer from "../../components/footer/footer.js";
 import image from "../../assets/images/boss-room.png";
+import warningImage from "../../assets/images/warning.png";
 import { useHistory } from 'react-router';
+import Footer1 from '../../components/footer/footer1';
 
-function FakeInvitationSafe2() {
+function FakeInvitationSafe4() {
 
-    const content = "Well done! You did it. Grab the hard drive which contains all the evidence. There might be an alarm system that may……. ";
+    const content = "You have lost signal and you are no longer in communication with the hacker";
 
     const styleProps = {
         "width": "18.9rem",
@@ -16,17 +17,17 @@ function FakeInvitationSafe2() {
     const history = useHistory();
 
     const handleNext = () => {
-        const path = "/fake-invitation-safe-3";
+        const path = "/fire-alarm";
         history.push(path);
     };
 
     return (
         <div className="fake-invitation">
             <img className="fake-invitation__image" src={image} alt="Fake Invitation" />
-            <Footer textBtn="Next"
+            <Footer1 textBtn="Next"
                 iconNext={true}
                 content={content}
-                isPlayerNarrative={false}
+                iconFooter={warningImage}
                 handleNext={handleNext}
                 styleProps={styleProps}
             />
@@ -34,4 +35,4 @@ function FakeInvitationSafe2() {
     );
 };
 
-export default FakeInvitationSafe2;
+export default FakeInvitationSafe4;

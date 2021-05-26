@@ -45,8 +45,9 @@ import {
   PhishingEmailInvitation2
 } from "./forms/PhishingEmailPage";
 import {
-  FakeInvitation, FakeInvitation1, FakeInvitationRiddlePuzzle, FakeInvitationSafe, FakeInvitationSafe1, FakeInvitationSafe2
+  FakeInvitation, FakeInvitation1, FakeInvitationRiddlePuzzle, FakeInvitationSafe, FakeInvitationSafe1, FakeInvitationSafe2, FakeInvitationSafe3, FakeInvitationSafe4
 } from "./forms/FakeInvitationPage";
+import { BossFiresPage, CongratsPage, FireAlarm, FireAlarmExit } from "./forms/FireAlarm";
 function App() {
   return (
     <div>
@@ -172,11 +173,29 @@ function App() {
           <Route path="/fake-invitation-safe-1">
             <FakeInvitationSafe1 />
           </Route>
+          <Route path="/fake-invitation-safe-3">
+            <FakeInvitationSafe3 />
+          </Route>
+          <Route path="/fake-invitation-safe-4">
+            <FakeInvitationSafe4 />
+          </Route>
           <Route path="/riddle-puzzle">
             <FakeInvitationRiddlePuzzle />
           </Route>
           <Route path="/fake-invitation-bossroom">
             <FakeInvitationSafe2 />
+          </Route>
+          <Route path="/fire-alarm">
+            <FireAlarm />
+          </Route>
+          <Route path="/exit-door">
+            <FireAlarmExit />
+          </Route>
+          <Route path="/congrats">
+            <CongratsPage />
+          </Route>
+          <Route path="/boss-fires">
+            <BossFiresPage />
           </Route>
           <Route path='/'>
             <WelcomePage />
