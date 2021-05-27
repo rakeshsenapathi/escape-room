@@ -14,6 +14,7 @@ function Footer3(props) {
         "fontSize": "2.6rem",
         "marginRight": "4rem",
         "textAlign": "center",
+        "cursor": "pointer",
         "backgroundColor": "#FFB169"
     }
 
@@ -35,7 +36,7 @@ function Footer3(props) {
                 <div className="footer-generic__text-container">
                     <h1 className="footer-generic__profile-text--1">{props.content1}</h1>
                     <h1 className="footer-generic__profile-text--2">{props.content2}
-                        <span className="color-highlight">{props.content3}</span>
+                        <span className="color-highlight"> {props.content3}</span>
                     </h1>
                 </div>
             </div>

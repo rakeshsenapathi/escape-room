@@ -79,7 +79,7 @@ In life, for all the times you fall down, you have to split it by the number of 
                 </div>
                 <div className="riddle__form alignAsSingleRow form-single">
                     <input
-                        type="password"
+                        type="text"
                         onChange={handleInput}
                         value={passwordVal}
                         required

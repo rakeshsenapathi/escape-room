@@ -42,7 +42,9 @@ import {
   PhishingEmailPage,
   PhishingEmailInvitation,
   PhishingEmailInvitation1,
-  PhishingEmailInvitation2
+  PhishingEmailInvitation2,
+  PhishingEmailCompose1,
+  PhishingEmailCompose2
 } from "./forms/PhishingEmailPage";
 import {
   FakeInvitation, FakeInvitation1, FakeInvitationRiddlePuzzle, FakeInvitationSafe, FakeInvitationSafe1, FakeInvitationSafe2, FakeInvitationSafe3, FakeInvitationSafe4
@@ -151,6 +153,12 @@ function App() {
           </Route>
           <Route path="/phishing-email-compose">
             <PhishingEmailCompose />
+          </Route>
+          <Route path="/phishing-email-compose-1">
+            <PhishingEmailCompose1 />
+          </Route>
+          <Route path="/phishing-email-compose-2">
+            <PhishingEmailCompose2 />
           </Route>
           <Route path="/phishing-email-invitation">
             <PhishingEmailInvitation />

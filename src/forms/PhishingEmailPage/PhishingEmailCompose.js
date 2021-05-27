@@ -7,7 +7,7 @@ import CONSTANTS from '../../assets/constants/Constants';
 
 function PhishingEmailCompose() {
 
-    const content = "Now that we have Sarah’s email ID, your next task is to create a phishing email to get Sarah to reset her login details. Remember a phishing email is a way of luring individuals to reveal sensitive information like passwords. This only works if we can create a legitimate-looking email to convince the target to trust us.";
+    const content = "Now that we have Sarah’s email ID, your next task is to create a phishing email to get Sarah to reset her login details.";
 
     const styleProps = {
         "width": "18.9rem",
@@ -17,34 +17,17 @@ function PhishingEmailCompose() {
     const history = useHistory();
 
     const handleNext = () => {
-        const path = "/cafe2";
+        const path = "/phishing-email-compose-1";
         history.push(path);
     };
-
-    const validateCombination = (response) => {
-        const { FROM, SUBJECT, BODY_INDEX } = response;
-        if (FROM === CONSTANTS.MAIL_ACCOUNT_SOLUTION
-            && SUBJECT === CONSTANTS.MAIL_SUBJECT_SOLUTION
-            && BODY_INDEX === CONSTANTS.MAIL_BODY_SOLUTION) {
-            const path = "/";
-            history.push(path);
-        }
-    }
-
-
-    const handleSend = (response) => {
-        validateCombination(response);
-        const path = "/phishing-email-invitation";
-        history.push(path);
-    }
 
     return (
         <div className="phishing-composemail">
             {/* <div className="phishing-composemail__conversation">
             </div> */}
-            <Email
+            {/* <Email
                 handleSend={handleSend}
-            />
+            /> */}
             <Footer textBtn="Next"
                 iconNext={true}
                 handleNext={handleNext}

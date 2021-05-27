@@ -1,6 +1,7 @@
 import PhishingEmailPage from './PhishingEmailPage';
 import PhishingEmailCompose from './PhishingEmailCompose';
 import PhishingEmailCompose1 from './PhishingEmailCompose1';
+import PhishingEmailCompose2 from './PhishingEmailCompose2';
 import PhishingEmailInvitation from './PhishingEmailInvitation';
 import PhishingEmailInvitation1 from './PhishingEmailInvitation1';
 import PhishingEmailInvitation2 from './PhishingEmailInvitation2';
@@ -11,5 +12,6 @@ export {
     PhishingEmailCompose1,
     PhishingEmailInvitation,
     PhishingEmailInvitation1,
-    PhishingEmailInvitation2
+    PhishingEmailInvitation2,
+    PhishingEmailCompose2
 }

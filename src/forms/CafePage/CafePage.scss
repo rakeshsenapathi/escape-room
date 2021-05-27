@@ -55,6 +55,11 @@
     &__image{
         margin-top: 2rem;
         margin-bottom: 2rem;
+        &--1{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 38%;
+        }
     }
 
 }
@@ -76,7 +81,7 @@
         position: absolute;
         top: 7.2%;
         left: 47%;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
     &--2{
@@ -129,4 +134,32 @@
             background-color: $color-primary-light;
         }
     }
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-link{
+        text-decoration: none;
+        font-style: inherit;
+        display: block;
+        content: 'Click here to download the menu card';
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 4px solid #ED9340;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 38rem;
+        text-align: center;
+        height: 9rem;
+        bottom: 10%;
+        background-color: white;
+        color: inherit;
+        position: absolute;
 }

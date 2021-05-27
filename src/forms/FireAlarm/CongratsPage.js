@@ -3,10 +3,13 @@ import "./FireAlarm.scss";
 import congratsImage from "../../assets/images/congrats.png";
 import { useHistory } from 'react-router';
 import Footer2 from '../../components/footer/footer2';
+import CONSTANTS from '../../assets/constants/Constants';
 
 function CongratsPage() {
 
-    const content = "Congratulations! You did it. You completed all the tasks and performed cyber security threats in order to destroy Company Roxxon. Now you know how a hacker’s mind works and how small human errors can lead to destroying a company.";
+    const playerName = localStorage.getItem(CONSTANTS.PLAYER_NAME);
+
+    const content = `Congratulations! ${playerName}, You did it. You completed all the tasks and performed cyber security threats in order to destroy Company Roxxon. Now you know how a hacker’s mind works and how small human errors can lead to destroying a company.`;
 
     const styleProps = {
         "width": "18.9rem",

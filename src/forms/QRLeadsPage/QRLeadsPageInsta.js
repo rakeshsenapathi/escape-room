@@ -48,7 +48,7 @@ function QRLeadsPageInsta() {
     }
 
     const handleSubmit = () => {
-        if (passwordVal !== CONSTANTS.SERVER_ROOM_PASSWORD) {
+        if (passwordVal !== CONSTANTS.QR_PASSWORD) {
             generateHintContent(failCount + 1);
             setFailCount(failCount + 1);
         }
@@ -77,7 +77,7 @@ function QRLeadsPageInsta() {
                 </div>
                 <div className="qrcode__form alignAsSingleRow form-single">
                     <input
-                        type="password"
+                        type="text"
                         onChange={handleInput}
                         value={passwordVal}
                         required

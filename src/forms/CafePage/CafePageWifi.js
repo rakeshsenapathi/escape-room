@@ -8,7 +8,7 @@ import { useHistory } from 'react-router';
 
 function CafePageWifi() {
 
-    const [content, setContent] = useState("Wifi Screen");
+    const [content, setContent] = useState("");
     const [hintClickCount, setHintClickCount] = useState(0);
     const history = useHistory();
     const [failCount, setFailCount] = useState(0);
@@ -27,13 +27,10 @@ function CafePageWifi() {
     const generateHintContent = (count) => {
         switch (count) {
             case 1:
-                setContent("Check the text in router for hints");
+                setContent("Look closely at the router");
                 break;
             case CONSTANTS.MAX_FAIL_LIMIT:
-                setContent("The password is ransomeware");
-                break;
             default:
-                setContent("The password is ransomeware");
                 break;
         }
     }
@@ -60,7 +57,7 @@ function CafePageWifi() {
                 <img className="cafePage-wifi__image" src={image} alt="coffeshop" />
                 <div className="cafePage-wifi__form alignAsSingleRow form-single">
                     <input
-                        type="password"
+                        type="text"
                         onChange={handleInput}
                         value={passwordVal}
                         required

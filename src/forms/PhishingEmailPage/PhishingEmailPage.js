@@ -2,9 +2,10 @@ import React from 'react';
 import "./PhishingEmailPage.scss";
 import image from "../../assets/images/conversation-3.png";
 import { useHistory } from 'react-router';
+import CONSTANTS from '../../assets/constants/Constants';
 
 function PhishingEmailPage() {
-    const playerName = "John"; //Mocking name, take it from context-api next
+    const playerName = localStorage.getItem(CONSTANTS.PLAYER_NAME); //Mocking name, take it from context-api next
     const history = useHistory();
     const handleNext = () => {
         const path = "/phishing-email-compose";

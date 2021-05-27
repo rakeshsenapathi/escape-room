@@ -14,6 +14,7 @@ function Footer1(props) {
         "fontSize": "2.6rem",
         "marginRight": "4rem",
         "textAlign": "center",
+        "cursor": "pointer",
         "backgroundColor": "#FFB169"
     }
 

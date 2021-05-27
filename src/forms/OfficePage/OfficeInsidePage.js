@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
-import image1 from '../../assets/images/outside-office-1.png';
+import image1 from '../../assets/images/tailgating.png';
 import image2 from '../../assets/images/inside-office-1.png';
 import Constants from '../../assets/constants/Constants';
 

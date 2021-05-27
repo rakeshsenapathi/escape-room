@@ -2,9 +2,10 @@ import React from 'react';
 import "./CafePage.scss";
 import image from "../../assets/images/conversation-2.png";
 import { useHistory } from 'react-router';
+import CONSTANTS from '../../assets/constants/Constants';
 
 function CafePagePostCoffee() {
-    const playerName = "Rakesh"; //Mocking name, take it from context-api next
+    const playerName = localStorage.getItem(CONSTANTS.PLAYER_NAME); //Mocking name, take it from context-api next
     const history = useHistory();
     const handleNext = () => {
         const path = "/office-outside";

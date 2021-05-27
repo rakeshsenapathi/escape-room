@@ -19,7 +19,7 @@ function IntroductionPage() {
                     className="introduction__iframe"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/6xfpTCT4Ygw"
+                    src="https://www.youtube.com/embed/6xfpTCT4Ygw?version=3"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer;

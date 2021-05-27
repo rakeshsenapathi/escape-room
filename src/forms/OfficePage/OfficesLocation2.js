@@ -15,7 +15,7 @@ function OfficesLocation2() {
     const history = useHistory();
 
     const handleNext = () => {
-        const path = "/office-location-3";
+        const path = "/office-location-4";
         history.push(path);
     };
 

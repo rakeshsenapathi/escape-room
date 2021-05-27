@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import "./CafePage.scss";
 import Footer from "../../components/footer/footer.js";
-import image from "../../assets/images/wifi-router-1.png";
+import image from "../../assets/images/menucard.png";
+import download from "../../assets/images/downloadlink.png";
 import "../../common-styles/main.scss";
 import CONSTANTS from "../../assets/constants/Constants";
 import { useHistory } from 'react-router';
@@ -33,10 +34,10 @@ function CafePageMenu() {
                 setContent("Hint 2) I think you have to rearrange the letters to form a word");
                 break;
             case CONSTANTS.MAX_FAIL_LIMIT:
-                setContent("Hint 3) Alright, I figured it out, the word is 'Ransomeware'");
+                setContent("Hint 3) Alright, I figured it out, the word is 'ransomware'");
                 break;
             default:
-                setContent("The password is ransomeware");
+                setContent("The password is ransomware");
                 break;
         }
     }
@@ -57,13 +58,24 @@ function CafePageMenu() {
         setHintClickCount(hintClickCount + 1);
     };
 
+    const downloadFullImage = "https://user-images.githubusercontent.com/14851449/119868868-3818ed00-bf3d-11eb-8bbc-54a98cdd62a7.png";
+
     return (
         <div className="cafePage-wifi">
             <div className="cafePage-wifi__container">
-                <img className="cafePage-wifi__image" src={image} alt="coffeshop" />
+                <div className="img-container">
+                    <img className="cafePage-wifi__image--1" src={image} alt="coffeshop" />
+                    <a className="download-link"
+                        href={downloadFullImage}
+                        target="_blank" rel="noopener noreferrer"
+                        download
+                    >Click here to view the image in full screen
+                    </a>
+                </div>
+                {/* <img className="cafePage-wifi__image--1" src={download} alt="coffeshop" /> */}
                 <div className="cafePage-wifi__form alignAsSingleRow form-single">
                     <input
-                        type="password"
+                        type="text"
                         onChange={handleInput}
                         value={passwordVal}
                         required

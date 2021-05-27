@@ -62,15 +62,21 @@ function OfficeInsidePage3() {
         setHintClickCount(hintClickCount + 1);
     };
 
+    const downloadFullImage = "https://user-images.githubusercontent.com/14851449/119872002-a14e2f80-bf40-11eb-8ba8-6583a3764770.png";
+
 
     return (
         <div className="server-room">
-            <img src={image}
-                alt="Outside office"
-                className="server-room__image" />
-            <div className="server-room__form alignAsSingleRow form-single">
-                <input
-                    type="password"
+            <div className="img-container--1">
+                <img className="server-room__image" src={image} alt="server room" />
+                <a className="download-link--1"
+                    href={downloadFullImage}
+                    target="_blank" rel="noopener noreferrer"
+                    download
+                >Click here to view the image in full screen
+                    </a>
+                <div className="server-room__form alignAsSingleRow form-single">
+                    <input
                     onChange={handleInput}
                     value={passwordVal}
                     required
@@ -80,6 +86,7 @@ function OfficeInsidePage3() {
                 <button
                     className="form__btn btn btn--default"
                     onClick={handleSubmit}>Done</button>
+            </div>
             </div>
             <Footer textBtn="Hint"
                 iconNext={false}
