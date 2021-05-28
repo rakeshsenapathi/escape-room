@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "./CafePage.scss";
 import Footer from "../../components/footer/footer.js";
 import image from "../../assets/images/menucard.png";
-import download from "../../assets/images/downloadlink.png";
 import "../../common-styles/main.scss";
 import CONSTANTS from "../../assets/constants/Constants";
 import { useHistory } from 'react-router';

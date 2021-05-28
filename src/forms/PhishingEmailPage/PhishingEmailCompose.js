@@ -1,9 +1,7 @@
 import React from 'react';
 import "./PhishingEmailPage.scss";
 import Footer from "../../components/footer/footer.js";
-import Email from "../../components/email/email.js";
 import { useHistory } from 'react-router';
-import CONSTANTS from '../../assets/constants/Constants';
 
 function PhishingEmailCompose() {
 
