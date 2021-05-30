@@ -6,7 +6,9 @@ import { useHistory } from 'react-router';
 
 function FakeInvitationSafe2() {
 
-    const content = "Well done! You did it. Grab the hard drive which contains all the evidence. There might be an alarm system that may……. ";
+    const content = (<div>Well done! You did it. Grab the hard drive which contains all the evidence.There might be an
+        <span style={{ "color": "#fb3640" }}> alarm system </span>
+                    that may……. </div>);
 
     const styleProps = {
         "width": "18.9rem",

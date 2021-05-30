@@ -21,6 +21,9 @@ function PhishingEmailCompose1() {
 
     return (
         <div className="phishing-composemail">
+            <div className="email-box">
+                <p className="email-box__text">sarahsmith@roxxon.com</p>
+            </div>
             <Footer textBtn="Next"
                 iconNext={true}
                 handleNext={handleNext}

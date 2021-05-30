@@ -30,7 +30,7 @@ function PhishingEmailPage() {
                 </p>
                 <p className="conversation-text conversation-text--3">
                     We didn’t even have to break <br />
-                    through the site’s defences. <br />
+                    through the site’s defenses. <br />
                     Hackers like me prey on the <br />
                     oversharing and careless <br />
                     nature of open social media <br />

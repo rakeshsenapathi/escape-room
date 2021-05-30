@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 
 function CafePage() {
 
-    const content = "Hacker: I see you have made it to the café. The reason I have sent you here is so you can start your first task.";
+    const content = "I see you have made it to the café. The reason I have sent you here is so you can start your first task.";
 
     const history = useHistory();
 

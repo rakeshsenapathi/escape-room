@@ -10,11 +10,13 @@ function OfficeInsidePage() {
     const contentText = "Ah great, I see Chris helped you in get in. You got away with that one! Now you need to find the server room.";
     const [image, setImage] = useState(image1);
     const [content, setContent] = useState();
+    const [showFooterElements, setShowFooterElements] = useState(false);
 
     const refreshBgImage = () => {
         setTimeout(() => {
             setImage(image2);
             setContent(contentText);
+            setShowFooterElements(true);
         }, Constants.REFRESH_TIME);
     }
 
@@ -39,6 +41,7 @@ function OfficeInsidePage() {
                 className="office-outside__image" />
             <Footer textBtn="Next"
                 iconNext={true}
+                showFooterElements={showFooterElements}
                 isPlayerNarrative={false}
                 handleNext={handleNext}
                 content={content}

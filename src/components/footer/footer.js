@@ -33,17 +33,20 @@ function Footer(props) {
 
     const image = props.hasOwnProperty('isPlayerNarrative') && props.isPlayerNarrative ? playerProfileImage : profileImage;
 
+    const showFooterElements = (props.hasOwnProperty("showFooterElements") && !props.showFooterElements) ? props.showFooterElements : true;
+
     return (
         <footer className="footer-generic">
             <div className="footer-generic__box">
-                <img className="footer-generic__profile-image" src={image} alt="footer" />
+                {showFooterElements && <img className="footer-generic__profile-image" src={image} alt="footer" />}
                 <h1 className="footer-generic__profile-text">{props.content}</h1>
             </div>
+            {showFooterElements &&
             <div style={btnStyles}
                 onClick={props.handleNext}>
                 {props.textBtn}
                 <img src={nextIcon} alt="Next" style={nextIconStyles} />
-            </div>
+                </div>}
         </footer>
     );
 }

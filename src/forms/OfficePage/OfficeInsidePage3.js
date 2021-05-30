@@ -62,7 +62,7 @@ function OfficeInsidePage3() {
         setHintClickCount(hintClickCount + 1);
     };
 
-    const downloadFullImage = "https://user-images.githubusercontent.com/14851449/119872002-a14e2f80-bf40-11eb-8ba8-6583a3764770.png";
+    const downloadFullImage = "https://user-images.githubusercontent.com/14851449/120116488-09517f80-c1a6-11eb-8f19-d5807f6fccd3.png";
 
 
     return (

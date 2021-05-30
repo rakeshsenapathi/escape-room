@@ -5,7 +5,7 @@ import image from '../../assets/images/server-room-1.png';
 
 function OfficeInsidePage2() {
 
-    const content = "Solve puzzle 2 to reveal the pin for the server room";
+    const content = "Solve this puzzle to reveal the pin for the server room.";
 
     const styleProps = {
         "width": "18.9rem",

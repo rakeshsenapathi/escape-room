@@ -1,7 +1,7 @@
 const CONSTANTS = {
     "WIFI_PASSWORD": "ransomware",
     "MAX_FAIL_LIMIT": 3,
-    "REFRESH_TIME": 3000,
+    "REFRESH_TIME": 1500,
     "SERVER_ROOM_PASSWORD": "8502",
     "QR_PASSWORD": "sarahsmith@roxxon.com",
     "FROM_ACCOUNTS": ["supervisor_sigma@hotmail.co.uk", "security@roxxon.safe.com", "itdep_sigma@gmail.com", "bensmith@companyx.com"],

@@ -91,3 +91,20 @@
         }
     }
 }
+
+.email-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: 10rem;
+    border-radius: 1rem;
+    background-color: $color-white;
+    padding: 2rem;
+    text-align: center;
+    &__text{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}

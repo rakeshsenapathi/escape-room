@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 
 function FakeInvitationPage() {
 
-    const content = "I’ve reached and hiding in plain sight with the others at the party.";
+    const content = "I have reached the location, and now hiding in plain sight with the others at the party.";
 
     const styleProps = {
         "width": "18.9rem",
