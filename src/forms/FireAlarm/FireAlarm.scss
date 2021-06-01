@@ -26,3 +26,92 @@
         }
     }
 }
+
+.review-firing{
+    height: 100vh;
+    position: relative;
+    background-color: $color-white;
+    &__container {
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+    &__img{
+        display: block;
+        height: 40rem;
+        margin-top: 5rem;
+    }
+    &__text{
+        padding: 2rem;
+    }
+    &__header-text{
+        font-size: 3rem;
+        color: black;
+        line-height: 1.4;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    &__bullet-points{
+        font-size: 2.6rem;
+        line-height: 1.6;
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.end-credits{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    background-image: url(../../assets/images/end-credits-bg.png);
+    background-size: cover;
+    background-position: center;
+    // padding: 8rem 10rem;
+    &__header-shape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 10rem;
+        margin: 0 auto;
+        padding: 2rem 2.5rem;
+        width: fit-content;
+        background-image: linear-gradient(to bottom, #59EE9E,#38A3C5);
+        &--text{
+            font-size: 5rem;
+            font-weight: 700;
+        }
+    }
+    &__text{
+        &--1{
+            padding: 0 10rem;
+            text-align: center;
+            font-size: 2.8rem;
+            margin: 0rem 5rem;
+            font-weight: 500;
+            color: $color-white;
+        }
+        &--2{
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: $color-white;
+        }
+        &--anchor{
+            font-family: inherit;
+            text-decoration: underline;
+            color: #5E9EFF;
+            text-align: center;
+            font-size: 3.2rem;
+        }
+        &--footer{
+            font-size: 5rem;
+            margin: 0 auto;
+            font-weight: 700;
+            color: $color-white;
+        }
+    }
+}

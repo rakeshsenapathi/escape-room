@@ -49,7 +49,7 @@ import {
 import {
   FakeInvitation, FakeInvitation1, FakeInvitationRiddlePuzzle, FakeInvitationSafe, FakeInvitationSafe1, FakeInvitationSafe2, FakeInvitationSafe3, FakeInvitationSafe4
 } from "./forms/FakeInvitationPage";
-import { BossFiresPage, CongratsPage, FireAlarm, FireAlarmExit } from "./forms/FireAlarm";
+import { BossFiresPage, CongratsPage, EndCredits, FireAlarm, FireAlarmExit, ReviewFiringReason } from "./forms/FireAlarm/index.js";
 function App() {
   return (
     <div>
@@ -204,6 +204,12 @@ function App() {
           </Route>
           <Route path="/boss-fires">
             <BossFiresPage />
+          </Route>
+          <Route path="/review-firing-reason">
+            <ReviewFiringReason />
+          </Route>
+          <Route path="/end">
+            <EndCredits />
           </Route>
           <Route path='/'>
             <WelcomePage />

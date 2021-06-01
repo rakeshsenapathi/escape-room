@@ -19,7 +19,7 @@ function CongratsPage() {
     const history = useHistory();
 
     const handleNext = () => {
-        const path = "/boss-fires";
+        const path = "/review-firing-reason";
         history.push(path);
     };
 
