@@ -37,11 +37,11 @@
 
     &__click-event-area{
         position: absolute;
-        width: 34%;
-        height: 26%;
+        width: 27%;
+        height: 14%;
         transform: translate(-50%, -50%);
-        top: 43%;
-        left: 46%;
+        top: 33%;
+        left: 36%;
         z-index: 222;
         background-color: transparent;
         &:hover{
@@ -67,13 +67,14 @@
         justify-content: center;
         align-items: center;
         width: 55%;
+        margin-top: 1rem;
         margin-bottom: 2rem;
     }
 
     &__scan-text{
         margin-left: 2rem;
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 3rem;
         color: $color-white;
     }
 
@@ -86,6 +87,7 @@
     &__image{
         margin-top: 2rem;
         margin-bottom: 2rem;
+        height: 40rem;
     }
 
 }

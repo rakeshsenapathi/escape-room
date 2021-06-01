@@ -1,7 +1,7 @@
 import React from 'react';
 import "./CafePage.scss";
 import Footer from "../../components/footer/footer.js";
-import image from "../../assets/images/coffee-shop-2.png";
+import image from "../../assets/images/coffee-shop-bluetie.png";
 import { useHistory } from 'react-router';
 
 function CafePage3() {

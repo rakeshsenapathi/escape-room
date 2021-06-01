@@ -25,7 +25,7 @@ function WelcomePage() {
             <div className="welcome__text-box">
                 <h1 className="heading-primary">
                     <span className="heading-primary--sub ut-align-center">Welcome to the</span>
-                    <span className="heading-primary--main">Escape Room</span>
+                    <span className="heading-primary--main">Hacker Heist</span>
                 </h1>
             </div>
             <div className="welcome__footer-text">

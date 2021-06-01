@@ -35,10 +35,10 @@ function CafePagePostCoffee() {
                     company credentials. <br />
                 </p>
                 <p className="cafe__conversation-text cafe__conversation-text--3">
-                    Task 1 complete, we now have <br />
-                    company Sigma’s employee <br />
-                    details to go into their <br />
-                    system. Next task, go to<br />
+                    We now have Sigma company’s <br />
+                    employee details <br />
+                    to go into their system. <br />
+                    Now, you have to go to <br />
                     company Sigma’s office. <br />
                 </p>
                 <button className="conversation-btn conversation-btn--default"

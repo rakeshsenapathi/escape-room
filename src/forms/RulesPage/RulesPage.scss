@@ -2,7 +2,7 @@
 .rules{
     height: 100vh;
     position: relative;
-    background-color: $color-secondary;
+    background-color: $color-black;
 
     &__box{
         position: absolute;
@@ -20,7 +20,7 @@
 
     &__heading{
         display: flex;
-        margin-top: 6.2rem;
+        margin-top: 3.2rem;
         margin-right: 11rem;
         margin-left: 15.1rem;
         flex-direction: column;
@@ -56,7 +56,7 @@
     }
 
     &__agree-btn{
-        top: 80%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
     }

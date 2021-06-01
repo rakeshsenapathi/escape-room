@@ -2,7 +2,7 @@ import React from 'react';
 import "./QRLeadsPage.scss";
 import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
-import image from '../../assets/images/searchengine-result.png';
+import image from '../../assets/images/instagram-search-image.png';
 
 function QRLeadsPage1() {
 

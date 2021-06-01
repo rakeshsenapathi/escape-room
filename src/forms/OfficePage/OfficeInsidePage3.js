@@ -6,10 +6,10 @@ import CONSTANTS from '../../assets/constants/Constants';
 
 function OfficeInsidePage3() {
 
-    const content_text = "Some of these dates look innacurate. Maybe those wrong dates can help us find the password.";
+    const content_text = "It looks like the four digit code has been hidden as incorrect dates";
 
-    const hint1 = "Hint 1) Check if everything is factually correct";
-    const hint2 = "Hint 2) It seems like the last digits are the clue";
+    const hint1 = "Hint 1) Maybe google the dates to check if the dates are factually correct.";
+    const hint2 = "Hint 2) The incorrect numbers make up the pin.";
     const hint3 = "Hint 3) Hero I go giving you the answer again! I think the answer is 8502";
 
     const [passwordVal, setPasswordVal] = useState("");

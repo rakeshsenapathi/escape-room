@@ -5,7 +5,7 @@ import image from '../../assets/images/offices-location.png';
 
 function OfficesLocation1() {
 
-    const content = "Okay great, I need you to connect your laptop to the server and find the location of the office that holds the evidence we are looking for.";
+    const content = "Okay great, I need you to connect your laptop to the server and I will find the location of the office that holds the evidence we are looking for.";
 
     const styleProps = {
         "width": "18.9rem",
