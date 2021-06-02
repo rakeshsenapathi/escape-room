@@ -4,6 +4,8 @@ import image from "../../assets/images/exit-door.png";
 import securityGuardImage from "../../assets/images/security-guard.png";
 import { useHistory } from 'react-router';
 import Footer1 from '../../components/footer/footer1';
+import { useMediaQuery } from 'react-responsive';
+
 
 function FireAlarmExit() {
 
@@ -21,9 +23,11 @@ function FireAlarmExit() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="fire-alarm">
-            <img className="fake-invitation__image" src={image} alt="Exit door" />
+            <img className={isTablet ? "fake-invitation__image--tablet" : "fake-invitation__image"} src={image} alt="Exit door" />
             <Footer1 textBtn="Next"
                 iconNext={true}
                 content={content}

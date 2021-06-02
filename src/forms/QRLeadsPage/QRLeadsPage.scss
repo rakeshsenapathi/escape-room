@@ -19,6 +19,10 @@
             margin-top: 2rem;
             width: 60%;
         }
+        &--tablet{
+            margin-top: 30%;
+            width: 95%;
+        }
     }
 
     &__search-event-area{
@@ -30,6 +34,16 @@
         left: 70%;
         z-index: 222;
         background-color: transparent;
+        &--tablet{
+            position: absolute;
+            width: 43%;
+            height: 10%;
+            transform: translate(-50%, -50%);
+            top: 55%;
+            left: 28%;
+            z-index: 222;
+            background-color: transparent;
+        }
         &:hover{
             cursor:pointer
         }
@@ -44,6 +58,16 @@
         left: 36%;
         z-index: 222;
         background-color: transparent;
+        &--tablet{
+            position: absolute;
+            width: 42%;
+            height: 10%;
+            transform: translate(-50%, -50%);
+            top: 53%;
+            left: 29%;
+            z-index: 222;
+            background-color: transparent;
+        }
         &:hover{
             cursor:pointer
         }
@@ -88,6 +112,11 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
         height: 40rem;
+        &--tablet{
+            margin-top: 10%;
+            margin-bottom: 2rem;
+            height: 40rem;
+        }
     }
 
 }

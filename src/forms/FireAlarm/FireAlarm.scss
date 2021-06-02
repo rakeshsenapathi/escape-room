@@ -84,6 +84,19 @@
             font-size: 5rem;
             font-weight: 700;
         }
+        &--tablet{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 17rem;
+            text-align: center;
+            margin: 0 2rem;
+            padding: 2rem 2.5rem;
+            width: -moz-fit-content;
+            width: fit-content;
+            background-image: linear-gradient(to bottom, #59EE9E, #38A3C5);
+        }
     }
     &__text{
         &--1{

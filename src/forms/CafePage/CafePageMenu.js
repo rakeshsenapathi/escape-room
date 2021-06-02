@@ -5,6 +5,7 @@ import image from "../../assets/images/menucard.png";
 import "../../common-styles/main.scss";
 import CONSTANTS from "../../assets/constants/Constants";
 import { useHistory } from 'react-router';
+import { useMediaQuery } from 'react-responsive';
 
 function CafePageMenu() {
 
@@ -57,13 +58,16 @@ function CafePageMenu() {
         setHintClickCount(hintClickCount + 1);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     const downloadFullImage = "https://user-images.githubusercontent.com/14851449/119868868-3818ed00-bf3d-11eb-8bbc-54a98cdd62a7.png";
 
     return (
         <div className="cafePage-wifi">
             <div className="cafePage-wifi__container">
                 <div className="img-container">
-                    <img className="cafePage-wifi__image--1" src={image} alt="coffeshop" />
+                    {isTablet && <img className="cafePage-wifi__image--tablet-1" src={image} alt="coffeshop" />}
+                    {!isTablet && <img className="cafePage-wifi__image--1" src={image} alt="coffeshop" />}
                     <a className="download-link"
                         href={downloadFullImage}
                         target="_blank" rel="noopener noreferrer"
@@ -71,8 +75,7 @@ function CafePageMenu() {
                     >Click here to view the image in full screen
                     </a>
                 </div>
-                {/* <img className="cafePage-wifi__image--1" src={download} alt="coffeshop" /> */}
-                <div className="cafePage-wifi__form alignAsSingleRow form-single">
+                {!isTablet && <div className="cafePage-wifi__form alignAsSingleRow form-single">
                     <input
                         type="text"
                         onChange={handleInput}
@@ -84,7 +87,21 @@ function CafePageMenu() {
                     <button
                         className="form__btn btn btn--default"
                         onClick={handleSubmit}>Done</button>
-                </div>
+                </div>}
+                {isTablet && <div className="alignAsSingleColumn">
+                    <input
+                        type="text"
+                        onChange={handleInput}
+                        value={passwordVal}
+                        required
+                        placeholder="Enter the password"
+                        className="cafePage-wifi__form-input form-single__input"
+                    />
+                    <span style={{ "marginTop": "2rem" }}>
+                        <button
+                            className="form__btn btn btn--default"
+                            onClick={handleSubmit}>Done</button></span>
+                </div>}
             </div>
             <Footer textBtn="Hint"
                 handleNext={handleHintClick}

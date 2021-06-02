@@ -19,6 +19,7 @@ import {
 } from "react-icons/fa";
 import './email.scss';
 import CONSTANTS from "../../assets/constants/Constants";
+import { useMediaQuery } from 'react-responsive';
 
 function Email(props) {
 
@@ -95,8 +96,10 @@ function Email(props) {
         "BODY_INDEX": selectedBodyIndex
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
-        <div className="email">
+        <div className={!isTablet ? "email" : "email--tablet"}>
             <div className="email__system-tray">
                 <MdMailOutline className="md-outline-style" />
                 <p className="email__header-text">New Message</p>

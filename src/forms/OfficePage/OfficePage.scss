@@ -11,6 +11,14 @@
         height: 70%;
         background-size: cover;
         transform: translate(-50%, -50%);
+        &--tablet{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            height: 48%;
+            background-size: cover;
+            transform: translate(-50%, -50%);
+        }
     }
 
 }
@@ -32,6 +40,11 @@
             margin-bottom: 2rem;
             width: 38%;
         }
+        &--tablet{
+            margin: 2rem 0rem;
+            height: 65%;
+            width: 88%;
+        }
     }
 
 }
@@ -52,6 +65,11 @@
     &__image{
         margin-top: 3rem;
         height: 70%;
+        &--tablet{
+            margin-top: 30%;
+            height: 40%;
+            width: 98%;
+        }
     }
 }
 
@@ -85,4 +103,8 @@
         color: inherit;
         position: absolute;
     }
+}
+
+.alignAsSingleColumn{
+    @include alignAsSingleColumn;
 }

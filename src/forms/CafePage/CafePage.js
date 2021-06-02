@@ -3,6 +3,7 @@ import "./CafePage.scss";
 import Footer from "../../components/footer/footer.js";
 import image from "../../assets/images/coffee-shop-bluetie.png";
 import { useHistory } from 'react-router';
+import { useMediaQuery } from 'react-responsive';
 
 function CafePage() {
 
@@ -20,10 +21,13 @@ function CafePage() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="cafePage">
             <div className="cafePage-container">
-                <img className="cafePage__image" src={image} alt="coffeshop" />
+                {isTablet && <img className="cafePage__image--tablet" src={image} alt="coffeshop" />}
+                {!isTablet && <img className="cafePage__image" src={image} alt="coffeshop" />}
             </div>
             <Footer textBtn="Next"
                 iconNext={true}

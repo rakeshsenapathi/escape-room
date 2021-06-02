@@ -1,10 +1,14 @@
 import React from 'react';
 import "./FireAlarm.scss";
+import { useMediaQuery } from 'react-responsive';
 
 function EndCredits() {
+
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="end-credits">
-            <div className="end-credits__header-shape">
+            <div className={isTablet ? "end-credits__header-shape--tablet" : "end-credits__header-shape"}>
                 <p className="end-credits__header-shape--text">Thank you for taking part in our training</p>
             </div>
             <p className="end-credits__text--1">Hope you had fun whilst learning about the key issues of the latest cyber security threats. Now that you can think like a hacker, you can be more alert and vigilant so that you don’t.</p>

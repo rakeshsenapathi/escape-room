@@ -3,6 +3,7 @@ import "./CafePage.scss";
 import Footer from "../../components/footer/footer.js";
 import image from "../../assets/images/coffee-shop-bluetie.png";
 import { useHistory } from 'react-router';
+import { useMediaQuery } from 'react-responsive';
 
 function CafePage4() {
 
@@ -25,14 +26,25 @@ function CafePage4() {
         history.push(path);
     }
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="coffeeShopStory">
             <div className="cafePage-container">
-                <img className="cafePage__image" src={image} alt="coffeshop" />
-                <div className="cafePage__highlight-shape cafePage__highlight-shape--1"
+                {isTablet && <img className="cafePage__image--tablet" src={image} alt="coffeshop" />}
+                {!isTablet && <img className="cafePage__image" src={image} alt="coffeshop" />}
+                {isTablet && <React.Fragment>
+                    <div className="cafePage__highlight-shape cafePage__highlight-shape--tablet-1"
+                        onClick={handleClickOption1}></div>
+                    <div className="cafePage__highlight-shape cafePage__highlight-shape--tablet-2"
+                        onClick={handleClickOption2}></div></React.Fragment>
+                }
+                {!isTablet && <React.Fragment>
+                    <div className="cafePage__highlight-shape cafePage__highlight-shape--1"
                     onClick={handleClickOption1}></div>
-                <div className="cafePage__highlight-shape cafePage__highlight-shape--2"
-                    onClick={handleClickOption2}></div>
+                    <div className="cafePage__highlight-shape cafePage__highlight-shape--2"
+                        onClick={handleClickOption2}></div></React.Fragment>
+                }
             </div>
             <Footer textBtn="Hint"
                 iconNext={false}

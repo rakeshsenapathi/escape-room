@@ -3,11 +3,13 @@ import './TeamNameEntryPage.scss';
 import { useHistory } from "react-router-dom";
 import profileImage from '../../assets/images/profile-image-1.png';
 import CONSTANTS from '../../assets/constants/Constants';
+import { useMediaQuery } from 'react-responsive';
 
 function TeamNameEntryPage() {
 
     const history = useHistory();
     const [inputVal, setInputVal] = new useState("");
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
 
     const navigateToNext = () => {
         if (inputVal === '') { return; }
@@ -20,7 +22,8 @@ function TeamNameEntryPage() {
 
     return (
         <div className="teamName">
-            <img src={profileImage} alt="Profile" className="teamName__profileImage" />
+            {isTablet && < img src={profileImage} alt="Profile" className="teamName__profileImage--tablet" />}
+            {!isTablet && < img src={profileImage} alt="Profile" className="teamName__profileImage" />}
             <form className="form">
                 <input
                     type="text"

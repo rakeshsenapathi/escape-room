@@ -4,6 +4,7 @@ import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
 import image from '../../assets/images/qrcode.png';
 import CONSTANTS from '../../assets/constants/Constants';
+import { useMediaQuery } from 'react-responsive';
 
 function QRLeadsPageInsta() {
 
@@ -63,14 +64,18 @@ function QRLeadsPageInsta() {
         setHintClickCount(hintClickCount + 1);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
 
     return (
         <div className="qrcode">
             <div className="qrcode__container">
                 <div className="qrcode__container-scan">
-                    <img src={image}
+                    {!isTablet && <img src={image}
                         alt="Outside office"
-                        className="qrcode__image" />
+                        className="qrcode__image" />}
+                    {isTablet && <img src={image}
+                        alt="Outside office"
+                        className="qrcode__image--tablet" />}
                     <p className="qrcode__scan-text">
                         Scan QR code using your QR Scanner
                         to open the Instagram profile.</p>

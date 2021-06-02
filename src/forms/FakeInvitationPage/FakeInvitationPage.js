@@ -3,6 +3,7 @@ import "./FakeInvitationPage.scss";
 import Footer from "../../components/footer/footer.js";
 import image from "../../assets/images/fake-invitation.png";
 import { useHistory } from 'react-router';
+import { useMediaQuery } from 'react-responsive';
 
 function FakeInvitationPage() {
 
@@ -20,9 +21,11 @@ function FakeInvitationPage() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="fake-invitation">
-            <img className="fake-invitation__image" src={image} alt="Fake Invitation" />
+            <img className={isTablet ? "fake-invitation__image--tablet" : "fake-invitation__image"} src={image} alt="Fake Invitation" />
             <Footer textBtn="Next"
                 iconNext={true}
                 content={content}

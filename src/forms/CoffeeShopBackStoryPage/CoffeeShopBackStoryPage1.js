@@ -3,6 +3,7 @@ import "./CoffeeShopBackStoryPage.scss";
 import Footer from "../../components/footer/footer.js";
 import image from "../../assets/images/coffee-shop-outdoor-1.png";
 import { useHistory } from 'react-router';
+import { useMediaQuery } from 'react-responsive';
 
 function CoffeeShopBackStoryPage1() {
 
@@ -20,9 +21,12 @@ function CoffeeShopBackStoryPage1() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="coffeeShopStory">
-            <img className="coffeeShopStory__image" src={image} alt="coffeshop" />
+            {isTablet && <img className="coffeeShopStory__image--tablet" src={image} alt="coffeshop" />}
+            {!isTablet && <img className="coffeeShopStory__image" src={image} alt="coffeshop" />}
             <Footer textBtn="Next"
                 iconNext={true}
                 handleNext={handleNext}

@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
 import image from '../../assets/images/outside-office-1.png';
+import { useMediaQuery } from 'react-responsive';
 
 function OfficePage3() {
 
@@ -19,11 +20,16 @@ function OfficePage3() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="office-outside">
-            <img src={image}
+            {isTablet && <img src={image}
                 alt="Outside office"
-                className="office-outside__image" />
+                className="office-outside__image--tablet" />}
+            {!isTablet && <img src={image}
+                alt="Outside office"
+                className="office-outside__image" />}
             <Footer textBtn="Next"
                 iconNext={true}
                 isPlayerNarrative={false}

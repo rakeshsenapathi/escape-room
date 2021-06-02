@@ -11,14 +11,24 @@
 
         margin-top: 10rem;
 
+        &--tablet{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         &-text{
             margin-top: 3rem;
             margin-bottom: 0;
+            &--tablet{
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
-    }
-
-    &__iframe{
     }
 
 }

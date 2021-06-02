@@ -3,6 +3,7 @@ import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
 import image from '../../assets/images/server-room-2.png';
 import CONSTANTS from '../../assets/constants/Constants';
+import { useMediaQuery } from 'react-responsive';
 
 function OfficeInsidePage3() {
 
@@ -64,29 +65,44 @@ function OfficeInsidePage3() {
 
     const downloadFullImage = "https://user-images.githubusercontent.com/14851449/120116488-09517f80-c1a6-11eb-8f19-d5807f6fccd3.png";
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
 
     return (
         <div className="server-room">
             <div className="img-container--1">
-                <img className="server-room__image" src={image} alt="server room" />
+                {!isTablet && <img className="server-room__image" src={image} alt="server room" />}
+                {isTablet && <img className="server-room__image--tablet" src={image} alt="server room" />}
+
                 <a className="download-link--1"
                     href={downloadFullImage}
                     target="_blank" rel="noopener noreferrer"
                     download
                 >Click here to view the image in full screen
                     </a>
-                <div className="server-room__form alignAsSingleRow form-single">
+                {!isTablet && <div className="server-room__form alignAsSingleRow form-single">
                     <input
-                    onChange={handleInput}
-                    value={passwordVal}
-                    required
-                    placeholder="Enter the password"
-                    className="server-room__form-input form-single__input"
-                />
-                <button
-                    className="form__btn btn btn--default"
-                    onClick={handleSubmit}>Done</button>
-            </div>
+                        onChange={handleInput}
+                        value={passwordVal}
+                        required
+                        placeholder="Enter the password"
+                        className="server-room__form-input form-single__input"
+                    />
+                    <button
+                        className="form__btn btn btn--default"
+                        onClick={handleSubmit}>Done</button>
+                </div>}
+                {isTablet && <div className="server-room__form alignAsSingleColumn form-single">
+                    <input
+                        onChange={handleInput}
+                        value={passwordVal}
+                        required
+                        placeholder="Enter the password"
+                        className="server-room__form-input form-single__input"
+                    />
+                    <button
+                        className="form__btn btn btn--default ut-marginTop"
+                        onClick={handleSubmit}>Done</button>
+                </div>}
             </div>
             <Footer textBtn="Hint"
                 iconNext={false}

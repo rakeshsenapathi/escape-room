@@ -4,6 +4,7 @@ import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
 import image from '../../assets/images/maze.png';
 import CONSTANTS from '../../assets/constants/Constants';
+import { useMediaQuery } from 'react-responsive';
 
 function FakeInvitationRiddlePuzzle() {
 
@@ -63,11 +64,12 @@ function FakeInvitationRiddlePuzzle() {
         setHintClickCount(hintClickCount + 1);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
 
     return (
         <div className="riddle">
             <div className="riddle__container">
-                <div className="riddle__container-scan">
+                <div className={isTablet ? "riddle__container-scan--tablet" : "riddle__container-scan"}>
                     <div className="riddle__text-container">
                         <p className="riddle__scan-text">
                             <span style={{ "fontWeight": "700" }}>Riddle: <br /></span>

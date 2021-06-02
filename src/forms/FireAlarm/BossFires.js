@@ -4,6 +4,7 @@ import image from "../../assets/images/getting-fired.png";
 import bossImage from "../../assets/images/boss-profile.png";
 import { useHistory } from 'react-router';
 import Footer3 from '../../components/footer/footer3';
+import { useMediaQuery } from 'react-responsive';
 
 function BossFiresPage() {
 
@@ -23,9 +24,11 @@ function BossFiresPage() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="fire-alarm">
-            <img className="fake-invitation__image" src={image} alt="Exit door" />
+            <img className={isTablet ? "fake-invitation__image--tablet" : "fake-invitation__image"} src={image} alt="Exit door" />
             <Footer3 textBtn="Next"
                 iconNext={true}
                 content1={content1}

@@ -1,14 +1,24 @@
 import React, { useEffect, useCallback } from 'react';
 import './WelcomePage.scss';
 import { useHistory } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive';
 
 function WelcomePage() {
 
     const history = useHistory();
 
+    const path = 'rules';
+
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
+    const handleClick = () => {
+        if (isTablet) {
+            history.push(path);
+        }
+    }
+
     const handleEventStart = useCallback((e) => {
         if (e.keyCode === 32) { // value of space bar in keyboard
-            const path = 'rules';
             history.push(path); // Routing to the path 'rules'
         }
     }, [history]);
@@ -21,7 +31,7 @@ function WelcomePage() {
     }, [handleEventStart]);
 
     return (
-        <div className="welcome">
+        <div className="welcome" onClick={handleClick}>
             <div className="welcome__text-box">
                 <h1 className="heading-primary">
                     <span className="heading-primary--sub ut-align-center">Welcome to the</span>
@@ -30,7 +40,7 @@ function WelcomePage() {
             </div>
             <div className="welcome__footer-text">
                 <h1 className="heading-primary--sub ut-align-center">
-                    Tap <span className="heading-primary--highlight">"Space"</span> to enter the game
+                    Tap <span className="heading-primary--highlight">{isTablet ? "anywhere" : "Space"}</span> to enter the game
                 </h1>
             </div>
         </div>

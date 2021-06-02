@@ -12,6 +12,13 @@
         &--formatted{
             top: 35%;
         }
+        &--tablet{
+            height: 38%;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__highlight-shape{
@@ -34,6 +41,22 @@
             height: 6rem;
             left: 49%;
             top: 35%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        &--tablet-1{
+            width: 6rem;
+            height: 6rem;
+            left: 14.5%;
+            top: 41%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        &--tablet-2{
+            width: 6rem;
+            height: 6rem;
+            left: 47%;
+            top: 37%;
             opacity: 0;
             cursor: pointer;
         }
@@ -63,6 +86,11 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
             width: 38%;
+        }
+        &--tablet-1{
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            width: 80%;
         }
     }
 
@@ -166,4 +194,11 @@
         background-color: white;
         color: inherit;
         position: absolute;
+}
+
+.alignAsSingleColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

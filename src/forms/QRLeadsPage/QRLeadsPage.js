@@ -3,6 +3,7 @@ import "./QRLeadsPage.scss";
 import Footer from "../../components/footer/footer.js";
 import { useHistory } from 'react-router';
 import image from '../../assets/images/searchengine-home.png';
+import { useMediaQuery } from 'react-responsive';
 
 function QRLeadsPage() {
 
@@ -20,12 +21,17 @@ function QRLeadsPage() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="qrleads">
             <div className="qrleads__container">
-                <img className="qrleads__image" src={image} alt="QR Leads" />
-                <div className="qrleads__search-event-area"
-                    onClick={handleNext}></div>
+                {isTablet && <img className="qrleads__image--tablet" src={image} alt="QR Leads" />}
+                {!isTablet && <img className="qrleads__image" src={image} alt="QR Leads" />}
+                {isTablet && <div className="qrleads__search-event-area--tablet"
+                    onClick={handleNext}></div>}
+                {!isTablet && <div className="qrleads__search-event-area"
+                    onClick={handleNext}></div>}
             </div>
             <Footer textBtn="Next"
                 btnHide={true}

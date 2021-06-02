@@ -4,6 +4,7 @@ import { useHistory } from 'react-router';
 import image1 from '../../assets/images/tailgating.png';
 import image2 from '../../assets/images/inside-office-1.png';
 import Constants from '../../assets/constants/Constants';
+import { useMediaQuery } from 'react-responsive';
 
 function OfficeInsidePage() {
 
@@ -34,11 +35,16 @@ function OfficeInsidePage() {
         history.push(path);
     };
 
+    const isTablet = useMediaQuery({ query: '(max-width: 1224px' });
+
     return (
         <div className="office-outside">
-            <img src={image}
+            {isTablet && <img src={image}
                 alt="Outside office"
-                className="office-outside__image" />
+                className="office-outside__image--tablet" />}
+            {!isTablet && <img src={image}
+                alt="Outside office"
+                className="office-outside__image" />}
             <Footer textBtn="Next"
                 iconNext={true}
                 showFooterElements={showFooterElements}

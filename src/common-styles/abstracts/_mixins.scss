@@ -32,6 +32,13 @@
     justify-content: center;
 }
 
+@mixin alignAsSingleColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin giveUnderline($margin-top) {
     &:after{
         content: '';

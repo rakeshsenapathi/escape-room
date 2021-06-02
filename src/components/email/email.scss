@@ -13,6 +13,20 @@
     z-index: 222;
     overflow: hidden;
 
+    &--tablet{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        height: fit-content;
+        border-radius: 1rem;
+        box-shadow: 5px 10px .5;
+        background-color: white;
+        z-index: 222;
+        overflow: hidden;
+    }
+
     &__system-tray{
         background-color: #00BCD4;
         height: 5rem;
