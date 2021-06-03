@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 import { useMediaQuery } from 'react-responsive';
 
 function CoffeeShopBackStoryPage2() {
-    const content = "I am here to help you get your revenge by hacking into the company’s system and obtaining evidence to destroy Roxxon. I have done all my research and articulated a full proof plan, I just need you to carefully follow my instructions";
+    const content = "I am here to help you get your revenge by hacking into the company’s system and obtaining evidence to destroy Roxxon. I have done all my research and articulated a fool proof plan, I just need you to carefully follow my instructions";
 
     const styleProps = {
         "width": "18.9rem",
