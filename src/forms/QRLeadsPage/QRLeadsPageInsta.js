@@ -16,7 +16,6 @@ function QRLeadsPageInsta() {
 
     const [passwordVal, setPasswordVal] = useState("");
     const [content, setContent] = useState(content_text);
-    const [failCount, setFailCount] = useState(0);
     const [hintClickCount, setHintClickCount] = useState(0);
 
     const styleProps = {
@@ -50,8 +49,8 @@ function QRLeadsPageInsta() {
 
     const handleSubmit = () => {
         if (passwordVal !== CONSTANTS.QR_PASSWORD) {
-            generateHintContent(failCount + 1);
-            setFailCount(failCount + 1);
+            generateHintContent(1);
+            setHintClickCount(hintClickCount + 1);
         }
         else {
             const path = "/phishing-email";

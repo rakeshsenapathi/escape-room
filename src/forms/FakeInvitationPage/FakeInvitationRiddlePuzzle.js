@@ -16,7 +16,6 @@ function FakeInvitationRiddlePuzzle() {
 
     const [passwordVal, setPasswordVal] = useState("");
     const [content, setContent] = useState(content_text);
-    const [failCount, setFailCount] = useState(0);
     const [hintClickCount, setHintClickCount] = useState(0);
 
     const styleProps = {
@@ -50,8 +49,8 @@ function FakeInvitationRiddlePuzzle() {
 
     const handleSubmit = () => {
         if (passwordVal !== CONSTANTS.RIDDLE_ANSWER) {
-            generateHintContent(failCount + 1);
-            setFailCount(failCount + 1);
+            generateHintContent(1);
+            setHintClickCount(hintClickCount + 1);
         }
         else {
             const path = "/fake-invitation-bossroom";
