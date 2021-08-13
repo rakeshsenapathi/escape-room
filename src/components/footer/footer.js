@@ -8,6 +8,7 @@ function Footer(props) {
 
     const showBtnStyle = {
         "borderRadius": "1rem",
+        
         "display": "block",
         "padding": props.iconNext ? "1.4rem 1.6rem" : "1.4rem 1.8rem",
         "width": props.styleProps.width,
